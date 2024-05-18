@@ -1,0 +1,310 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(67, 198, 93, 0.429) 1px 2px 4px -1px,
+    rgba(45, 153, 40, 0.362) 0px 4px 5px 0px,
+    rgba(9, 78, 34, 0.508) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  overflow-x: hidden;
+}
+.rating-color {
+  color: var(--rating-color) !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.product:hover {
+  /* box-shadow: var(--shadow); */
+  /* border: solid 1px var(--main-color); */
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0 137 123);
+  background-image: url(../src/assets/hero-left.png);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  top: -120px;
+}
+.header3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0 137 123);
+  background-image: url(../src/assets/hero-left.png);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -120px;
+}
+
+.header2 {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../src/assets/c8646c8c-retailhut-home-banner-image.jpg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  top: -120px;
+}
+.product .btn {
+  /* transition: transform 1s, opacity 1s; */
+  /* transform: translateY(100%); */
+  opacity: 1;
+  color: rgb(0 137 123) !important;
+  font-size: 20px;
+}
+/* .product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+} */
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color) !important;
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.parent {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.btn-brd {
+  border: none !important;
+  margin-top: 15px !important;
+  background-color: rgb(0 137 123) !important;
+  color: rgb(255, 252, 252) mportant;
+  /* border-radius: 30px; */
+}
+li,
+a {
+  text-decoration: none !important;
+  list-style: none;
+  font-weight: 900;
+  color: rgb(73, 73, 73) !important;
+}
+span {
+  color: rgb(0 137 123) !important;
+}
+::placeholder {
+  color: rgb(0 137 123) !important;
+  font-weight: 900;
+}
+li:hover,
+a:hover {
+  color: rgb(0 137 123) !important;
+}
+aside {
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+  right: -100%;
+  z-index: 99999;
+  /* overflow-y: auto; */
+}
+
+span.carts {
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  left: 25px;
+  background-color: var(--main-color);
+}
+.modal {
+  top: 10% !important;
+}
+.loading {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0 !important;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f3f2e8;
+}
+.card:hover {
+  box-shadow: var(--shadow);
+}
+.modal {
+  z-index: 99999999999999999999999999999999999999999999999999999999999999 !important;
+}
+.modal-backdrop {
+  background-color: #f0f3f2 !important;
+}
+/*---start media query----*/
+
+@media (max-width: 1399.98px) {
+  .form {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .form {
+    width: 50% !important;
+  }
+  .img1 {
+    margin-top: -169px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .form {
+    width: 50% !important;
+  }
+  .tit {
+    font-size: 25px !important;
+    width: 100% !important;
+  }
+  .img1 {
+    margin-top: -125px !important;
+  }
+  .header {
+    /* margin-top: -400px !important; */
+    top: -400px !important;
+    height: 150vh;
+  }
+  .header2 {
+    /* margin-top: -400px !important; */
+    top: -400px !important;
+    height: 150vh !important;
+  }
+  .header3 {
+    /* margin-top: -400px !important; */
+    top: -400px !important;
+    height: 150vh !important;
+  }
+  .text {
+    margin-top: 50% !important;
+  }
+  .inp {
+    margin-top: 200px !important;
+    margin-bottom: 200px !important;
+  }
+  .inp2 {
+    top: -100px;
+  }
+  .inp3 {
+    margin-top: 400px !important;
+  }
+}
+@media (max-width: 850.98px) {
+  .form {
+    width: 50% !important;
+  }
+  .header {
+    top: -500px !important;
+    height: 150vh;
+  }
+  .text {
+    margin-top: 50% !important;
+  }
+  .inp {
+    top: -700px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    top: -400px !important;
+    height: 150vh;
+  }
+  .header2 {
+    /* margin-top: -400px !important; */
+    top: -400px !important;
+    height: 150vh !important;
+  }
+  .header3 {
+    /* margin-top: -400px !important; */
+    top: -400px !important;
+    height: 150vh !important;
+  }
+  .text {
+    margin-top: 50% !important;
+  }
+  .inp {
+    top: -700px !important;
+  }
+  .slide {
+    display: none !important;
+  }
+  .tit6 {
+    font-size: 20px !important;
+  }
+  .img1 {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+  .img2 {
+    margin-left: 0px !important;
+  }
+  .tit3 {
+    flex-direction: column !important;
+  }
+  .tit4 {
+    width: 100% !important;
+  }
+  .tit {
+    font-size: 25px !important;
+    width: 100% !important;
+  }
+  .form {
+    width: 50% !important;
+  }
+  .tit2 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 626.98px) {
+  .form {
+    width: 90% !important;
+  }
+  .tit {
+    font-size: 25px !important;
+    width: 100% !important;
+  }
+  .text {
+    margin-top: 400px !important;
+  }
+}
+@media (max-width: 390px) {
+  .tit {
+    font-size: 20px !important;
+    width: 100% !important;
+  }
+  .text {
+    margin-top: 900px !important;
+  }
+}
+
+/*----end media query----*/
+.card {
+  padding: 20px !important;
+}
